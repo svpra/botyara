@@ -23,9 +23,14 @@ def rab_niger(message):
   
 @bot.message_handler(content_types=["text"])  
 def start(message):
-    markup = types.InlineKeyboardMarkup()
-    button1 = types.InlineKeyboardButton("Сайт Хабр", url='https://habr.com/ru/all/')
-    markup.add(button1)
+    if(message.text == "👋 Поздороваться"):
+        bot.send_message(message.chat.id, text="Привеет.. Спасибо что читаешь статью!)")
+    elif(message.text == "❓ Задать вопрос"):
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = types.KeyboardButton("Как меня зовут?")
+        btn2 = types.KeyboardButton("Что я могу?")
+        back = types.KeyboardButton("Вернуться в главное меню")
+        markup.add(btn1, btn2, back)
     bot.send_message(message.chat.id, "Привет, {0.first_name}! Нажми на кнопку и перейди на сайт)".format(message.from_user), reply_markup=markup)kup)
     
 @bot.message_handler(commands=["bye_kitten"])  
