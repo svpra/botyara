@@ -28,7 +28,54 @@ def send_fucking_nigga_to_sibir(message):
 def sam_test(message):
 	bot.reply_to(message, "Введите любую цифру от 1 до 7")
 	if(message.text == "1"):
-        bot.send_message(message.chat.id, text="Привеет.. Спасибо что читаешь статью!)")
+        bot.send_message(message.chat.id, text="Котик, в каком году произошла отмена крепостного права?")
+            if(message.text == "1861"):
+                bot.reply_to(message, "Мяу, и правда, отмена крепостного права произошла в 1861 году")
+            else:
+                bot.reply_to(message, "Котек, на самом деле отмена крепостного права произошла в 1861 году. Я верю, что ты Запомнишь!")
+                
+	if(message.text == "2"):
+        bot.send_message(message.chat.id, text="Зайка, в каком году произошел распад СССР?")
+            if(message.text == "1991"):
+                bot.reply_to(message, "Молодец! Распад СССР действительно произошёл в 1991 году.")
+            else:
+                bot.reply_to(message, "Солнышко, на самом деле распад СССР произошел в 1991 году. Ты все равно умничка!")
+                
+	if(message.text == "3"):
+        bot.send_message(message.chat.id, text="Котёнок, в каком году был образован СССР?")
+            if(message.text == "1922"):
+                bot.reply_to(message, "Зая, всё верно! Распад СССР действительно произошёл в 1922 году.")
+            else:
+                bot.reply_to(message, "Золотце, на самом деле СССР был образованв 1922 году. Я уверен, что ты запомнишь!)")
+                
+	if(message.text == "4"):
+        bot.send_message(message.chat.id, text="Котик, в каком году произошла отмена крепостного права?)")
+            if(message.text == "1861"):
+                bot.reply_to(message, "Мяу, и правда, отмена крепостного права произошла в 1861 году")
+            else:
+                bot.reply_to(message, "Котек, на самом деле отмена крепостного права произошла в 1861 году. Я верю, что ты Запомнишь!")
+                
+	if(message.text == "5"):
+        bot.send_message(message.chat.id, text="Котик, в каком году произошла отмена крепостного права?)")
+            if(message.text == "1861"):
+                bot.reply_to(message, "Мяу, и правда, отмена крепостного права произошла в 1861 году")
+            else:
+                bot.reply_to(message, "Котек, на самом деле отмена крепостного права произошла в 1861 году. Я верю, что ты Запомнишь!")
+
+	if(message.text == "6"):
+        bot.send_message(message.chat.id, text="Котик, в каком году произошла отмена крепостного права?)")
+            if(message.text == "1861"):
+                bot.reply_to(message, "Мяу, и правда, отмена крепостного права произошла в 1861 году")
+            else:
+                bot.reply_to(message, "Котек, на самом деле отмена крепостного права произошла в 1861 году. Я верю, что ты Запомнишь!")
+
+	if(message.text == "7"):
+        bot.send_message(message.chat.id, text="Котик, в каком году произошла отмена крепостного права?)")
+            if(message.text == "1861"):
+                bot.reply_to(message, "Мяу, и правда, отмена крепостного права произошла в 1861 году")
+            else:
+                bot.reply_to(message, "Котек, на самом деле отмена крепостного права произошла в 1861 году. Я верю, что ты Запомнишь!")
+
     elif(message.text == "❓ Задать вопрос"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("1")
