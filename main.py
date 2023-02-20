@@ -14,12 +14,12 @@ def send_welcome(message):
 # Bye
 @bot.message_handler(commands=["bye_kitten"])  
 def bye(message):
-    photo = open('путь_к_фото', 'rb')
+    photo = open('kotek.png', 'rb')
     bot.send_photo(chat_id, photo)
 
 # Start Test
 @bot.message_handler(commands=["start_test"])
-def send_fucking_nigga_to_sibir(message):
+def start_test(message):
     if message == "start_test":
         sam_test()
 
